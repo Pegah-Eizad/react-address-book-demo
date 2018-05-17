@@ -6,15 +6,15 @@ import './contact.css';
 export default function Contact(props){
   return(
     <div className="contact">
-        <img className="contact-photo">{props.photo} />
+        <img className="contact-photo" src={props.photo} alt="avatar"/>
         <h1 className="contact-name">{props.name}</h1>
         <h1 className="contact-address">{props.address}</h1>
-    </div
+    </div>
   );
 };
 
 Contact.defaultProps = {
-  name: '';
+  name: '',
   photo: '',
   address: ''
 };

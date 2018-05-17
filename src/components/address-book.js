@@ -2,7 +2,7 @@ import React from 'react';
 
 import Contact from './contact';
 // The AddressBook component goes here.  It should be the default export.
-export default class AddressBook extends React.component{
+export default class AddressBook extends React.Component {
   constructor(props){
     super(props);
     this.state = {
@@ -23,6 +23,13 @@ export default class AddressBook extends React.component{
   }
 
   render(){
-    return();
+    const contacts = this.state.contacts.map((contact, index) =>
+         <Contact {...contact} />
+    );
+    return(
+      <div>
+          {contacts}
+      </div>
+    );
   }
 }

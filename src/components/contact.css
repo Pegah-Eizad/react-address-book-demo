@@ -26,6 +26,8 @@
 }
 
 .contact-address {
+    font-size: 1em;
+    font-weight: normal;
     font-style: normal;
     order: 2;
 }
